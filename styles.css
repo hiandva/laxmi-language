@@ -127,16 +127,12 @@ p {
 }
 
 .logo-mark {
-  display: grid;
-  place-items: center;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--gold));
-  color: white;
-  font-family: "Playfair Display", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 10px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -399,38 +395,6 @@ p {
   box-shadow: var(--shadow);
   border: 4px solid var(--surface);
   background: var(--bg-alt);
-}
-
-.about-photo-placeholder {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 0.75rem;
-  min-height: 22rem;
-  aspect-ratio: 1;
-  border-radius: 28px;
-  background:
-    linear-gradient(160deg, rgba(47, 93, 86, 0.18), rgba(184, 92, 56, 0.2)),
-    var(--bg-alt);
-  color: rgba(44, 36, 25, 0.45);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.about-initials {
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
-  line-height: 1;
-  color: var(--teal);
-  letter-spacing: 0.04em;
-}
-
-.about-photo-caption {
-  font-size: 0.82rem;
-  text-transform: none;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
 }
 
 .about-name {
