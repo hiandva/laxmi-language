@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+    <symbol id="icon-english" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#f4d8c8"/><text x="24" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#2f5d56">En</text></symbol>
+    <symbol id="icon-hindi" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#f4d8c8"/><text x="24" y="31" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#b85c38">हि</text></symbol>
+    <symbol id="icon-cooking" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#f4d8c8"/><path d="M14 28c0-5 4-9 10-9s10 4 10 9" fill="none" stroke="#b85c38" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="24" cy="20" rx="10" ry="4" fill="#c9a227"/><path d="M18 32h12" stroke="#2f5d56" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-culture" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#f4d8c8"/><path d="M24 12c-4 6-12 8-12 16 0 5 5 9 12 9s12-4 12-9c0-8-8-10-12-16z" fill="#2f5d56" opacity="0.85"/><circle cx="24" cy="28" r="3" fill="#c9a227"/></symbol>
+    <symbol id="icon-travel" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#eef5f3"/><path d="M16 30l16-8-6-2-2-6-8 16z" fill="#b85c38"/></symbol>
+    <symbol id="icon-study" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#eef5f3"/><path d="M14 18h20v16H14z" fill="none" stroke="#2f5d56" stroke-width="2"/><path d="M18 14h12v6H18z" fill="#c9a227"/><path d="M18 24h12M18 28h8" stroke="#2f5d56" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-kids" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#eef5f3"/><circle cx="24" cy="20" r="5" fill="#b85c38"/><path d="M14 34c2-6 6-9 10-9s8 3 10 9" fill="none" stroke="#2f5d56" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  </svg>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#top">
@@ -38,6 +47,8 @@
 
   <main id="top">
     <section class="hero">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-script" aria-hidden="true">हिन्दी · English</div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Personal Language &amp; Culture Lessons</p>
@@ -57,21 +68,27 @@
             <li>小さなお子さまから大人まで</li>
           </ul>
         </div>
-        <div class="hero-card" aria-hidden="true">
-          <div class="hero-card-inner">
-            <p class="hero-card-label">Lesson Focus</p>
-            <h2>Travel / Study / Daily Life</h2>
-            <p>会話・発音・読み書きまで、目的に合わせて柔軟にカリキュラムを組みます。</p>
-            <div class="hero-card-tags">
-              <span>English</span>
-              <span>Hindi</span>
-              <span>Indian Cooking</span>
-              <span>Culture</span>
-            </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img
+              src="images/vandana-profile.jpg"
+              alt="井川ヴァンダナ（Vandana Igawa）"
+              width="420"
+              height="420"
+              decoding="async"
+            >
           </div>
+          <ul class="hero-chips">
+            <li><svg class="chip-icon" width="20" height="20"><use href="#icon-travel"/></svg> Travel</li>
+            <li><svg class="chip-icon" width="20" height="20"><use href="#icon-study"/></svg> Study</li>
+            <li><svg class="chip-icon" width="20" height="20"><use href="#icon-cooking"/></svg> Cooking</li>
+            <li><svg class="chip-icon" width="20" height="20"><use href="#icon-culture"/></svg> Culture</li>
+          </ul>
         </div>
       </div>
     </section>
+
+    <div class="section-wave" aria-hidden="true"></div>
 
     <section id="services" class="section">
       <div class="container">
@@ -81,23 +98,23 @@
           <p>語学レッスンを中心に、インド文化に触れる体験もご用意しています。</p>
         </div>
         <div class="card-grid">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">En</div>
+          <article class="card card-visual">
+            <svg class="card-icon" width="48" height="48" aria-hidden="true"><use href="#icon-english"/></svg>
             <h3>英語レッスン</h3>
             <p>日常会話、旅行、ビジネス、試験対策など、目的に応じた個別指導。初心者から上級者まで歓迎です。</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">हि</div>
+          <article class="card card-visual">
+            <svg class="card-icon" width="48" height="48" aria-hidden="true"><use href="#icon-hindi"/></svg>
             <h3>ヒンディー語レッスン</h3>
             <p>インド旅行や留学準備、文化理解のためのヒンディー語を、発音から丁寧にお伝えします。</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🍛</div>
+          <article class="card card-visual">
+            <svg class="card-icon" width="48" height="48" aria-hidden="true"><use href="#icon-cooking"/></svg>
             <h3>インド料理教室</h3>
             <p>家庭料理を、アットホームな雰囲気で。スパイスの使い方や食文化も一緒に学べます。</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">✦</div>
+          <article class="card card-visual">
+            <svg class="card-icon" width="48" height="48" aria-hidden="true"><use href="#icon-culture"/></svg>
             <h3>文化体験</h3>
             <p>ヘナタトゥー、サリーの着付けなど、インド文化に興味のある方へ。内容はご相談ください。</p>
           </article>
@@ -113,16 +130,25 @@
         </div>
         <ul class="feature-list">
           <li>
-            <strong>これから英語・ヒンディー語を始めたい方</strong>
-            <span>基礎からゆっくり進めます。未経験でも安心してご参加ください。</span>
+            <svg class="feature-icon" width="40" height="40" aria-hidden="true"><use href="#icon-kids"/></svg>
+            <div>
+              <strong>これから英語・ヒンディー語を始めたい方</strong>
+              <span>基礎からゆっくり進めます。未経験でも安心してご参加ください。</span>
+            </div>
           </li>
           <li>
-            <strong>旅行や留学前に会話力をつけたい方</strong>
-            <span>実際の場面を想定した会話練習を中心に、実用的な表現を身につけます。</span>
+            <svg class="feature-icon" width="40" height="40" aria-hidden="true"><use href="#icon-travel"/></svg>
+            <div>
+              <strong>旅行や留学前に会話力をつけたい方</strong>
+              <span>実際の場面を想定した会話練習を中心に、実用的な表現を身につけます。</span>
+            </div>
           </li>
           <li>
-            <strong>インド文化や料理にも興味がある方</strong>
-            <span>語学だけでなく、文化体験を組み合わせた学びも可能です。</span>
+            <svg class="feature-icon" width="40" height="40" aria-hidden="true"><use href="#icon-culture"/></svg>
+            <div>
+              <strong>インド文化や料理にも興味がある方</strong>
+              <span>語学だけでなく、文化体験を組み合わせた学びも可能です。</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -186,10 +212,18 @@
           <h2>経歴・実績</h2>
           <p>学校・大学・企業研修からメディア出演まで、長年にわたる指導と文化発信の実績があります。</p>
         </div>
+        <ul class="media-badges" aria-label="メディア・所属実績">
+          <li>NHK</li>
+          <li>フジテレビ</li>
+          <li>テレビ朝日</li>
+          <li>上智大学</li>
+          <li>中央大学</li>
+          <li>慶應義塾大学</li>
+        </ul>
         <div class="experience-grid">
           <article class="experience-card">
             <h3>語学指導</h3>
-            <ul class="timeline">
+            <ul class="timeline timeline-visual">
               <li>
                 <span class="timeline-year">1998年〜</span>
                 <span class="timeline-text">フリーランスの個人家庭教師として英語・ヒンディー語を指導</span>
@@ -242,7 +276,7 @@
           </article>
           <article class="experience-card">
             <h3>メディア・翻訳・文化活動</h3>
-            <ul class="timeline">
+            <ul class="timeline timeline-visual">
               <li>
                 <span class="timeline-year">2000年</span>
                 <span class="timeline-text">雑誌『Voce』にてインド料理の企画・編集協力</span>
@@ -272,19 +306,35 @@
     </section>
 
     <section id="culture" class="section">
-      <div class="container culture-banner">
-        <div>
-          <p class="eyebrow">Culture</p>
-          <h2>語学と文化を一緒に</h2>
-          <p>
-            雑誌『Voce』でのインド料理企画や、テレビ朝日『食彩の王国』への出演協力など、
-            料理と文化の発信も長年続けてきました。
-            ヘナタトゥーやサリーの着付けなど、インド文化に興味のある方もお気軽にご相談ください。
-          </p>
+      <div class="container">
+        <div class="culture-banner">
+          <div>
+            <p class="eyebrow">Culture</p>
+            <h2>語学と文化を一緒に</h2>
+            <p>
+              雑誌『Voce』でのインド料理企画や、テレビ朝日『食彩の王国』への出演協力など、
+              料理と文化の発信も長年続けてきました。
+              ヘナタトゥーやサリーの着付けなど、インド文化に興味のある方もお気軽にご相談ください。
+            </p>
+          </div>
+          <blockquote>
+            「楽しみながら、無理なく続けられるレッスン」を大切にしています。
+          </blockquote>
         </div>
-        <blockquote>
-          「楽しみながら、無理なく続けられるレッスン」を大切にしています。
-        </blockquote>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/vandana-profile.jpg" alt="講師 井川ヴァンダナ" width="400" height="400" loading="lazy">
+            <figcaption>講師紹介</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-cooking.jpg" alt="インド家庭料理のイメージ" width="400" height="400" loading="lazy">
+            <figcaption>インド料理教室</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-culture.jpg" alt="インド文化体験のイメージ" width="400" height="400" loading="lazy">
+            <figcaption>文化体験</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
