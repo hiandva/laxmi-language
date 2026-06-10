@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hiandva.github.io/laxmi-language/sitemap.xml
